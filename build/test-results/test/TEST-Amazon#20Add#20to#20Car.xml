@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Amazon Add to Car" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-26T04:36:04" hostname="RC-PC" time="149.489">
+  <properties/>
+  <testcase name="Add item To cart" classname="Amazon Add to Car" time="60.356"/>
+  <testcase name="Add item To cart" classname="Amazon Add to Car" time="89.131"/>
+  <system-out><![CDATA[    Given Alejo is in Amazon Home Page # AmazonAddToCarStep_Def.alejoIsInAmazonHomePage()
+
+  @Amazon @AddToCart
+  Scenario Outline: Add item To cart            # src/test/resources/features/amazon_add_to_car.feature:22
+computador
+5
+Info del elemento clickeadoRatón Inalámbrico, Ratón De Juego Recargable inphic Con Receptor USB Nano Para Notebook, PC, Computadora Portátil, Computadora, Macbook(Enchapado negro)
+    When Alejo search an item and select any 0  # AmazonAddToCarStep_Def.alejoSearchAnItemAndSelectAny(int,AmazonItemModel>)
+    And adds it to the car                      # AmazonAddToCarStep_Def.addsItToTheCar()
+Info del target es : Ratón Inalámbrico, Ratón De Juego Recargable inphic Con Receptor USB Nano Para Notebook, PC, Computadora Portátil, Computadora, Macbook(Enchapado negro)
+    Then Alejo can see selected item in his car # AmazonAddToCarStep_Def.alejoCanSeeSelectedItemInHisCar()
+    Given Alejo is in Amazon Home Page # AmazonAddToCarStep_Def.alejoIsInAmazonHomePage()
+
+  @Amazon @AddToCart
+  Scenario Outline: Add item To cart            # src/test/resources/features/amazon_add_to_car.feature:23
+carro
+1
+Info del elemento clickeadoEinhell - BT-HT 90 - Carretilla de mano
+    When Alejo search an item and select any 1  # AmazonAddToCarStep_Def.alejoSearchAnItemAndSelectAny(int,AmazonItemModel>)
+    And adds it to the car                      # AmazonAddToCarStep_Def.addsItToTheCar()
+Info del target es : Einhell - BT-HT 90 - Carretilla de mano
+    Then Alejo can see selected item in his car # AmazonAddToCarStep_Def.alejoCanSeeSelectedItemInHisCar()
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 16558
+Only local connections are allowed.
+oct 25, 2018 11:36:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Add item To cart
+----------------------------------------------------------------------------
+oct 25, 2018 11:37:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Add item To cart
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

@@ -1,0 +1,246 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24368986550,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Alejo is in Amazon Home Page",
+            "match": {
+              "location": "AmazonAddToCarStep_Def.alejoIsInAmazonHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 116928544,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AmazonAddToCarStep_Def.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Add item To cart",
+        "description": "",
+        "id": "amazon-add-to-car;add-item-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23597246755,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Alejo search an item and select any 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 36
+                }
+              ],
+              "location": "AmazonAddToCarStep_Def.alejoSearchAnItemAndSelectAny(int,AmazonItemModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "busqueda",
+                  "indice"
+                ]
+              },
+              {
+                "cells": [
+                  "computador",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "carro",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3253804318,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "adds it to the car",
+            "match": {
+              "location": "AmazonAddToCarStep_Def.addsItToTheCar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7013870817,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Alejo can see selected item in his car",
+            "match": {
+              "location": "AmazonAddToCarStep_Def.alejoCanSeeSelectedItemInHisCar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@AddToCart"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 29434016957,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Alejo is in Amazon Home Page",
+            "match": {
+              "location": "AmazonAddToCarStep_Def.alejoIsInAmazonHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3227185,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AmazonAddToCarStep_Def.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Add item To cart",
+        "description": "",
+        "id": "amazon-add-to-car;add-item-to-cart;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25792604924,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Alejo search an item and select any 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 36
+                }
+              ],
+              "location": "AmazonAddToCarStep_Def.alejoSearchAnItemAndSelectAny(int,AmazonItemModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "busqueda",
+                  "indice"
+                ]
+              },
+              {
+                "cells": [
+                  "computador",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "carro",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2785328559,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "adds it to the car",
+            "match": {
+              "location": "AmazonAddToCarStep_Def.addsItToTheCar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12450226511,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Alejo can see selected item in his car",
+            "match": {
+              "location": "AmazonAddToCarStep_Def.alejoCanSeeSelectedItemInHisCar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@AddToCart"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Add to Car",
+    "description": "  As a buyer user\n  I want to use Amazon Page\n  to succesfull add an item to my carShop",
+    "id": "amazon-add-to-car",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/amazon_add_to_car.feature",
+    "tags": [
+      {
+        "name": "@Amazon",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

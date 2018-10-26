@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Amazon Add to Car</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Amazon Add to Car</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Amazon Add to Car</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2m29.49s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Add item To cart</td>
+<td class="success">1m0.36s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Add item To cart</td>
+<td class="success">1m29.13s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>    Given Alejo is in Amazon Home Page # AmazonAddToCarStep_Def.alejoIsInAmazonHomePage()
+
+  @Amazon @AddToCart
+  Scenario Outline: Add item To cart            # src/test/resources/features/amazon_add_to_car.feature:22
+computador
+5
+Info del elemento clickeadoRatón Inalámbrico, Ratón De Juego Recargable inphic Con Receptor USB Nano Para Notebook, PC, Computadora Portátil, Computadora, Macbook(Enchapado negro)
+    When Alejo search an item and select any 0  # AmazonAddToCarStep_Def.alejoSearchAnItemAndSelectAny(int,AmazonItemModel&gt;)
+    And adds it to the car                      # AmazonAddToCarStep_Def.addsItToTheCar()
+Info del target es : Ratón Inalámbrico, Ratón De Juego Recargable inphic Con Receptor USB Nano Para Notebook, PC, Computadora Portátil, Computadora, Macbook(Enchapado negro)
+    Then Alejo can see selected item in his car # AmazonAddToCarStep_Def.alejoCanSeeSelectedItemInHisCar()
+    Given Alejo is in Amazon Home Page # AmazonAddToCarStep_Def.alejoIsInAmazonHomePage()
+
+  @Amazon @AddToCart
+  Scenario Outline: Add item To cart            # src/test/resources/features/amazon_add_to_car.feature:23
+carro
+1
+Info del elemento clickeadoEinhell - BT-HT 90 - Carretilla de mano
+    When Alejo search an item and select any 1  # AmazonAddToCarStep_Def.alejoSearchAnItemAndSelectAny(int,AmazonItemModel&gt;)
+    And adds it to the car                      # AmazonAddToCarStep_Def.addsItToTheCar()
+Info del target es : Einhell - BT-HT 90 - Carretilla de mano
+    Then Alejo can see selected item in his car # AmazonAddToCarStep_Def.alejoCanSeeSelectedItemInHisCar()
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 16558
+Only local connections are allowed.
+oct 25, 2018 11:36:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Add item To cart
+----------------------------------------------------------------------------
+oct 25, 2018 11:37:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Add item To cart
+----------------------------------------------------------------------------
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 25-oct-2018 23:38:35</p>
+</div>
+</div>
+</body>
+</html>
